@@ -6,17 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GP</title>
     <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="js/index.js"></script>
 </head>
 <body>
         <header class="header">
             <div class="header-top">
-                <ul>
-                    <li><a href="#">免费注册</a></li>
-                    <li><a href="#">立即登录</a></li>
-                    <li><a href="#">安全保障</a></li>
-                    <li><a href="#">帮助中心</a></li>
-                    <li><a href="#">联系我们</a></li>
-                </ul>
+                <div class="h-t-content">
+                    <ul>
+                        <li><a href="#">免费注册</a></li>
+                        <li><a href="#">立即登录</a></li>
+                        <li><a href="#">安全保障</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                        <li><a href="#">联系我们</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="header-bottom">
                 <div class="h-b-center">
@@ -36,12 +39,14 @@
             </div>
         </header>
 
-        <div class="nav">
-            <img src="img/nav1.png" alt="">
+        <div class="nav-box">
+            <div class="nav">
+                <img src="img/nav1.png" alt="">
+            </div>
         </div>
 
-        <div class="content">
-            <section class="one">
+        <div class="max-box1">
+            <div class="one">
                 <div class="o-left">
                     <div class="o-l-left">
                         <h4>了解巧牛</h4>
@@ -71,10 +76,12 @@
                         </ul>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
 
-            <section class="two">
-                <p>每日送出一百个免费实盘,盈利全归您</p>
+        <div class="content">
+            <div class="two">
+                <p><b>每日送出一百个免费实盘,盈利全归您</b></p>
                 <div class="t-content">
                     <ul>
                         <li>实盘金额 : <span class="o-color"><b>$2000</b>元</span></li>
@@ -88,9 +95,9 @@
                     </ul>
                     <input type="button" value="立即申请" class="input-normal">
                 </div>
-            </section>
+            </div>
 
-            <section class="three-normal">
+            <div class="three-normal">
                 <div class="r-header">
                     <i></i>
                     <h3>按天配资方案</h3>
@@ -101,7 +108,7 @@
                     <div class="r-c-t">
                         <ul>
                             <li>
-                                <h3>[新手专享]</h3>
+                                <span class="bt">[新手专享]</span>
                                 <h2>2000元</h2>
                                 <p class="r-c-t-p">实盘资金</p>
                                 <p>管理费<span>3元</span>/天</p>
@@ -109,7 +116,7 @@
                                 <input type="button" value="查看详细"> 
                             </li>
                             <li>
-                                <h3>[短线狙击]</h3>
+                                <span class="bt">[短线狙击]</span>
                                 <h2>5万元</h2>
                                 <p class="r-c-t-p">实盘资金</p>
                                 <p>管理费<span>7元</span>/天</p>
@@ -117,7 +124,7 @@
                                 <input type="button" value="查看详细">
                             </li>
                             <li>
-                                <h3>[活期利滚利]</h3>
+                                <span class="bt">[活期利滚利]</span>
                                 <h2>一万元</h2>
                                 <p class="r-c-t-p">实盘资金</p>
                                 <p>管理费<span>10元</span>/天</p>
@@ -128,18 +135,18 @@
                     </div>
                     <div class="r-c-b">
                         <ul>
-                            <li><i></i>操盘时间：2天-30天，可延期</li>
-                            <li><i></i>操盘时间：2天-30天，可延期</li>
+                            <li><i></i><b>操盘时间</b> ：2天-30天，可延期</li>
+                            <li><i></i><b>操盘时间</b> ：2天-30天，可延期</li>
                         </ul>
                         <ul>
-                            <li><i></i>仓位限制：沪深A股，无限制</li>
-                            <li><i></i>放大倍数：5-15倍</li>
+                            <li><i></i><b>仓位限制</b> ：沪深A股，无限制</li>
+                            <li><i></i><b>放大倍数</b> ：5-15倍</li>
                         </ul>
                     </div>
                 </div>
-            </section>
+            </div>
 
-            <section class="three-normal">
+            <div class="three-normal">
                 <div class="r-header r-header2">
                     <i></i>
                     <h3>按月配资方案</h3>
@@ -150,7 +157,7 @@
                     <div class="r-c-t">
                         <ul>
                             <li>
-                                <h3>[1:1新手速增]</h3>
+                                <span class="bt">[1:1新手速增]</span>
                                 <h2>2000元</h2>
                                 <p class="r-c-t-p">实盘资金</p>
                                 <p><span>0.68分</span>/每天 | 每月<span>6.8元</span></p>
@@ -158,7 +165,7 @@
                                 <input type="button" value="查看详细"> 
                             </li>
                             <li>
-                                <h3>[大额生利]</h3>
+                                <span class="bt">[大额生利]</span>
                                 <h2>15万元</h2>
                                 <p class="r-c-t-p">实盘资金</p>
                                 <p><span>1.9分</span>/每天 | 每月<span>38元</span></p>
@@ -166,7 +173,7 @@
                                 <input type="button" value="查看详细">
                             </li>
                             <li>
-                                <h3>[活期利滚利]</h3>
+                                <span class="bt">[活期利滚利]</span>
                                 <h2>一万元</h2>
                                 <p class="r-c-t-p">实盘资金</p>
                                 <p><span>1.8分</span>/每天 | 每月<span>36元</span></p>
@@ -177,18 +184,18 @@
                     </div>
                     <div class="r-c-b r-c-b2">
                         <ul>
-                            <li><i></i>操盘时间：2天-30天，可延期</li>
-                            <li><i></i>操盘时间：2天-30天，可延期</li>
+                            <li><i></i><b>操盘时间</b> ：2天-30天，可延期</li>
+                            <li><i></i><b>操盘时间</b> ：2天-30天，可延期</li>
                         </ul>
                         <ul>
-                            <li><i></i>仓位限制：沪深A股，无限制</li>
-                            <li><i></i>放大倍数：5-15倍</li>
+                            <li><i></i><b>仓位限制</b> ：沪深A股，无限制</li>
+                            <li><i></i><b>放大倍数</b> ：5-15倍</li>
                         </ul>
                     </div>
                 </div>
-            </section>
+            </div>
 
-            <section class="four">
+            <div class="four">
                 <div class="f-l">
                     <div class="f-l-header">
                         <i></i>
@@ -248,22 +255,32 @@
                         <img src="img/k.png" alt="">
                     </div>
                     <div class="f-r-bottom">
-                        <a href="#" class="aaa onfocus">领涨板块</a>
-                        <a href="#" class="aaa onblur">领跌板块</a>
+                        <a class="onfocus" id="zhang">领涨板块</a>
+                        <a class="" id="die">领跌板块</a>
                         <div class="f-r-b-content">
-                            <ul>
+                            <ul class="lzbk">
                                 <li><p>保险</p><span>+5.34%</span><span>1190.48</span></li>
+                                <li><p>银行类</p><span>+4.69%</span><span>287.34</span></li>
+                                <li><p>券商</p><span>+3.57%</span><span>33380.16</span></li>
+                            </ul>
+                            <ul class="ldbk">
+                                <li><p>险保</p><span>+5.34%</span><span>1190.48</span></li>
                                 <li><p>银行类</p><span>+4.69%</span><span>287.34</span></li>
                                 <li><p>券商</p><span>+3.57%</span><span>33380.16</span></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
 
-            <section class="five">
+        <div class="max-box">
+            <div class="five">
+                <div class="five-header">
+                    <h2>常见问题</h2><p>查看更多</p>
+                </div>
                 <div class="five-left">
-                    <h2>常见问题</h2>
+                    
                     <ul>
                         <li class="decoration">我在巧牛的配资的额度有多大?</li>
                         <li class="response">巧牛网根据您缴纳的保证金提供2-5倍资金杠杆，如1000元的保证金，最多可配资5000元，您的操盘总金额为6000元。<a>（查看全部）</a></li>
@@ -274,7 +291,6 @@
                     </ul>
                 </div>
                 <div class="five-right">
-                    <p>查看更多</p>
                     <ul>
                         <li>我在巧牛的配资的额度有多大?</li>
                         <li class="response">巧牛网根据您缴纳的保证金提供2-5倍资金杠杆，如1000元的保证金，最多可配资5000元，您的操盘总金额为6000元。<a>（查看全部）</a></li>
@@ -284,9 +300,11 @@
                         <li>股票配资借款月利率是怎么算的？</li>
                     </ul>
                 </div>
-            </section>
+            </div>
+        </div>
 
-            <section class="six">
+        <div class="content">
+            <div class="six">
                 <h2>采用上市公司《恒生电子》专业股票交易软件</h2>
                 <p>巧牛网与恒生电子股份有限公司强强联合，为客户提供更加专业、高效、安全的投资管理服务。</p>
                 <div class="six-l six-content">
@@ -307,11 +325,17 @@
                             文件大小：17.3M</p>
                     <input type="button" value="Android版下载">
                 </div>
-            </section>
-            <section class="seven">
+            </div>
+            <div class="seven">
                 <h2>合作伙伴</h2>
-                <img src="img/sj.jpg" alt="">
-            </section>
+                <img src="img/sj2.jpg" alt="" class="sj-img">
+                <img src="img/sj1.jpg" alt="">
+                <img src="img/sj3.jpg" alt="">
+                <img src="img/sj4.jpg" alt="">
+                <img src="img/sj5.jpg" alt="">
+                <img src="img/sj6.jpg" alt="">
+                <img src="img/sj7.jpg" alt="">
+            </div>
         </div>
 
         <footer class="foot">
@@ -348,13 +372,13 @@
                     </div>
                     <div class="foot-c-t-right">
                         <p> 服务时间：工作日9:00-20:00</p>
-                        <h2>400-757-8118</h2>        
+                        <span>400-757-8118</span>        
                         <ul>
                             <li>在线客服</li>
                             <li>反馈建议</li>
                         </ul>
                         <input type="button" class="wx" value="关注微信">
-                        <input type="button" class="qq" value="QQ交流群">     
+                        <input type="button" class="qq" value="QQ交流群">
                     </div>
                 </div>
                 <div class="foot-c-bottom">
