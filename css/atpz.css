@@ -39,6 +39,7 @@
 .c-h-1 span {
     position: absolute;
     top: 9px;
+    left: 72px;
     display: block;
     width: 24px;
     height: 24px;
@@ -54,7 +55,6 @@
 .c-h-active span {
     position: absolute;
     top: 9px;
-    left: 72px;
     display: block;
     width: 24px;
     height: 24px;
@@ -163,7 +163,7 @@
     color: #a9a9a9;
 }
 
-.c-xzcp-c-active h4 {
+.c-xzcp-c-active h4 strong {
     color: #ff3b3b;
 }
 
@@ -201,6 +201,14 @@
     color: #c5c5c5;
 }
 
+.c-xzcp-content2 h5{
+    color:red;
+    font-size:12px;
+    line-height:20px;
+    font-weight:normal;
+    display:none;
+}
+
 .content-xzbz {
     width: 100%;
     overflow: hidden;
@@ -231,6 +239,7 @@
 }
 
 .c-xzbz-content {
+    display:block;
     width: 100%;
     overflow: hidden;
     margin-top: 15px;
@@ -496,7 +505,7 @@
 
 .hj-content {
     float: right;
-    width: 180px;
+    width: 192px;
     height: 80px;
     padding-top: 25px;
     padding-bottom: 15;
@@ -519,13 +528,13 @@
 
 .hj-content ul li p:nth-child(2) {
     text-align: left;
-    width: 70px;
+    width: 80px;
     float: left;
 }
 
 .hj-content ul li p img {
     float: right;
-    margin-top: 11px;
+    margin-top: 9px;
 }
 
 .hj-content ul li p span {

@@ -65,48 +65,57 @@
                 <div class="content-xzcp">
                     <div class="c-xzcp-header">
                         <h4>选择操盘资金</h4>
-                        <p>手动输入操盘资金&gt;&gt;</p>
+                        <p id="sdsr">手动输入操盘资金&gt;&gt;</p>
                     </div>
                     <div class="c-xzcp-content1">
-                        <div class="c-xzcp-c c-xzcp-c-active">
-                            <h4>2000<span>元</span></h4>
+                        <div class="c-xzcp-c c-xzcp-c-active" data_borrowmoney="2000">
+                            <h4><strong></strong><span>元</span></h4>
                             <p>实盘资金</p>
                             <img src="img/atpz/1.png" alt="">
                         </div>
-                        <div class="c-xzcp-c">
-                            <h4>5000<span>元</span></h4>
+                        <div class="c-xzcp-c" data_borrowmoney="5000">
+                            <h4><strong></strong><span>元</span></h4>
                             <p>实盘资金</p>
                             <img src="img/atpz/1.png" alt="">
                         </div>
-                        <div class="c-xzcp-c">
-                            <h4>1万<span>元</span></h4>
+                        <div class="c-xzcp-c" data_borrowmoney="10000">
+                            <h4><strong></strong><span>元</span></h4>
                             <p>实盘资金</p>
                             <img src="img/atpz/1.png" alt="">
                         </div>
-                        <div class="c-xzcp-c">
-                            <h4>2万<span>元</span></h4>
+                        <div class="c-xzcp-c" data_borrowmoney="20000">
+                            <h4><strong></strong><span>元</span></h4>
                             <p>实盘资金</p>
                             <img src="img/atpz/1.png" alt="">
                         </div>
-                        <div class="c-xzcp-c">
-                            <h4>5万<span>元</span></h4>
+                        <div class="c-xzcp-c" data_borrowmoney="50000">
+                            <h4><strong></strong><span>元</span></h4>
                             <p>实盘资金</p>
                             <img src="img/atpz/1.png" alt="">
                         </div>
-                        <div class="c-xzcp-c">
-                            <h4>10万<span>元</span></h4>
+                        <div class="c-xzcp-c" data_borrowmoney="100000">
+                            <h4><strong></strong><span>元</span></h4>
                             <p>实盘资金</p>
                             <img src="img/atpz/1.png" alt="">
                         </div>
-                        <div class="c-xzcp-c">
-                            <h4>20万<span>元</span></h4>
+                        <div class="c-xzcp-c" data_borrowmoney="200000">
+                            <h4><strong></strong><span>元</span></h4>
                             <p>实盘资金</p>
                             <img src="img/atpz/1.png" alt="">
                         </div>
                     </div>
-                    <div class="c-xzcp-content2">
-                        <input type="text">
+                    <div class="c-xzcp-content2" id="sdsr-input">
+                        <input type="text" id="srk">
                         <p>￥</p><span>元</span>
+                        <h5 id="errow_title"></h5>
+                        <input type="hidden">
+                        <input type="hidden" id="moneymin">
+                        <input type="hidden" id="moneymax">
+                        <input type="hidden" id="bzj_hidden">
+                        <input type="hidden" id="cpzj_hidden" value="2000">
+                        <input type="hidden" id="15money">
+                        <input type="hidden" id="10money">
+                        <input type="hidden" id="5money">
                     </div>
                 </div>
 
@@ -115,17 +124,17 @@
                         <h4>选择合适的风险保证金</h4>
                         <p>您需要支付的保证金,也就是您的投资本金</p>
                     </div>
-                    <div class="c-xzbz-content">
-                        <div class="c-xzbz-c c-xzbz-c-active">
-                            <p class="c-xzbz-c-p">133<span>元</span></p>
+                    <div class="c-xzbz-content" id="xzbzj">
+                        <div class="c-xzbz-c">
+                            <p class="c-xzbz-c-p"><strong id="bzj15"></strong><span>元</span></p>
                             <div class="c-xzbz-c-bottom">
                                 <span></span>
                                 <p>放大15倍</p>
                                 <img src="img/atpz/2.png" alt="">
                             </div>
                         </div>
-                        <div class="c-xzbz-c">
-                            <p class="c-xzbz-c-p">200<span>元</span></p>
+                        <div class="c-xzbz-c c-xzbz-c-active">
+                            <p class="c-xzbz-c-p"><strong id="bzj10"></strong><span>元</span></p>
                             <div class="c-xzbz-c-bottom">
                                 <span></span>
                                 <p>放大10倍</p>
@@ -133,7 +142,7 @@
                             </div>
                         </div>
                         <div class="c-xzbz-c">
-                            <p class="c-xzbz-c-p">400<span>元</span></p>
+                            <p class="c-xzbz-c-p"><strong id="bzj5"></strong><span>元</span></p>
                             <div class="c-xzbz-c-bottom">
                                 <span></span>
                                 <p>放大5倍</p>
@@ -156,9 +165,9 @@
                             <li>亏损平仓线</li>
                         </ul>
                         <ul class=" c-c-c-ul2 ">
-                            <li>2,200<span>元</span></li>
-                            <li>2,100<span>元</span></li>
-                            <li>2,060<span>元</span></li>
+                            <li id="totalMoney"><strong>2,200</strong><span>元</span></li>
+                            <li><strong id="jjx">2,100</strong><span>元</span></li>
+                            <li><strong id="pcx">2,060</strong><span>元</span></li>
                         </ul>
                         <ul class="c-c-c-ul1 ">
                             <li>资金使用期限</li>
@@ -167,13 +176,36 @@
                         </ul>
                         <ul class="c-c-c-ul4 ">
                             <li>
-                                <select id="tianshu ">
+                                <select id="tianshu">
                                     <option value="2 ">2天</option>
                                     <option value="3 ">3天</option>
                                     <option value="4 ">4天</option>
                                     <option value="5 ">5天</option>
                                     <option value="6 ">6天</option>
                                     <option value="7 ">7天</option>
+                                    <option value="8 ">8天</option>
+                                    <option value="9 ">9天</option>
+                                    <option value="10 ">10天</option>
+                                    <option value="11 ">11天</option>
+                                    <option value="12 ">12天</option>
+                                    <option value="13 ">13天</option>
+                                    <option value="14 ">14天</option>
+                                    <option value="15 ">15天</option>
+                                    <option value="16 ">16天</option>
+                                    <option value="17 ">17天</option>
+                                    <option value="18 ">18天</option>
+                                    <option value="19 ">19天</option>
+                                    <option value="20 ">20天</option>
+                                    <option value="21 ">21天</option>
+                                    <option value="22 ">22天</option>
+                                    <option value="23 ">23天</option>
+                                    <option value="24 ">24天</option>
+                                    <option value="25 ">25天</option>
+                                    <option value="26 ">26天</option>
+                                    <option value="27 ">27天</option>
+                                    <option value="28 ">28天</option>
+                                    <option value="20 ">29天</option>
+                                    <option value="30 ">30天</option>
                                 </select>
                                 <span>2天-30天，用几天算几天账户管理费</span>
                             </li>
@@ -181,7 +213,7 @@
                                 <p><span>3</span>元/每天</p><span>按天收取,周末节假日免费</span>
                             </li>
                             <li>
-                                <input type="radio" name="radio">
+                                <input type="radio" name="radio" checked>
                                 <span>今天</span>
                                 <input type="radio" name="radio">
                                 <span>下个交易日</span>
@@ -195,18 +227,18 @@
                         <ul>
                             <li>
                                 <p>支付保证金<img src="img/atpz/4.png" alt=""></p>
-                                <p>:<span><b>￥200</b>元</span></p>
+                                <p>:<span><b>￥<strong id="bzj">200</strong></b>元</span></p>
                             </li>
                             <li>
                                 <p>账户管理费<img src="img/atpz/4.png" alt=""></p>
-                                <p>:<span><b>￥6</b>元</span></p>
+                                <p>:<span><b id="glf">￥6</b>元</span></p>
                             </li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="tj">
-                    <p>合计需支付：<span>￥206</span>元</p>
+                    <p>合计需支付：<span>￥<strong id="allpay">206</strong></span>元</p>
                     <input type="button" value="提交申请" class="tjsq">
                     <span class="tj-span">
                         <input type="checkbox" checked="checked">
@@ -313,6 +345,8 @@
             </div>
         </div>
     </footer>
+
+    
 </body>
 
 </html>
