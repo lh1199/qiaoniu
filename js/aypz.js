@@ -12,7 +12,7 @@ $(function() {
 
     $.ajax({
         type: "POST",
-        url: "productsDay_at.json",
+        url: "productsDay_ay.json",
         dataType: 'json',
         error: function() {
             alert("网络异常...");
@@ -24,28 +24,20 @@ $(function() {
                 alert("产品为空");
             }else{
                 for (var i = 0; i < product.length; i++) {
-                var index1 = i;
-                $(".c-xzcp-c strong").each(function(index2, item) {
-                    $this = $(this);
-                    if (index2 == index1) {
-                        $this.text(product[index1].data_borrowmoney)
-                    }
-                })
-                };
-                for (var j = 0; j < bzj_time.length; j++) {
-                    var index3 = j;
-                    $(".c-xzbz-c strong").each(function(index4, item) {
+                    var index1 = i;
+                    $(".c-xzcp-c strong").each(function(index2, item) {
                         $this = $(this);
-                        if (index3 == index4) {
-                            $this.text(bzj_time[index3].data_pzamount)
+                        if (index2 == index1) {
+                            $this.text(moneyFormat(product[index1].data_borrowmoney));
+                            if($this.hasClass("c-xzcp-c-active")) {
+                                $cpzj = parseInt(product[index1].data_borrowmoney);
+                            }
                         }
                     })
                 };
                 $("#moneymin").val(product[0].moneyMin);
                 $("#moneymax").val(product[0].moneyMax);
-                $("#15money").val(bzj_time[0].moneyTimes);
-                $("#10money").val(bzj_time[1].moneyTimes);
-                $("#5money").val(bzj_time[2].moneyTimes);
+                checkmoney();
             }
         }
     })
@@ -88,14 +80,23 @@ $(function() {
     });
 
     function checkmoney(){
-        $("#bzj15").text(Math.round($("#cpzj_hidden").val() / $("#15money").val()));
-        $("#bzj10").text(Math.round($("#cpzj_hidden").val() / $("#10money").val()));
-        $("#bzj5").text(Math.round($("#cpzj_hidden").val() / $("#5money").val()));
+        for(var j = 0; j < bzj_time.length; j ++) {
+            var index3 = j;
+            $(".c-xzbz-c strong").each(function(index4,item) {
+                $this = $(this);
+                if(index3 == index4) {
+                    $this.text(moneyFormat(bzj_time[index3].moneyTimes * $cpzj));
+                    if($this.hasClass("c-xzbz-c-active")) {
+                        $bzj = parseInt(bzj_time[index3].moneyTimes * $cpzj)
+                    }
+                }
+            })
+        }
 
         $(".c-xzbz-c").each(function(){
             $this = $(this);
             if($(this).hasClass("c-xzbz-c-active")) {
-                $bzj = parseInt($(this).find("strong").text());
+                $bzj = parseInt(bzj_time[$this.index()].moneyTimes * $cpzj);
                 $jjx = bzj_time[$this.index()].rateWarn;
                 return;
             }
@@ -105,17 +106,17 @@ $(function() {
         var $totalMoney_zfc = addCommas($totalMoney);
         $("#totalMoney strong").text($totalMoney_zfc);
 
-        var $jjx = $cpzj + $bzj * $jjx;
+        var $jjx = $bzj + $cpzj * $jjx;
         $("#jjx").text(Math.round($jjx));
 
         $pcx = product[0].rateOpenLine;
-        var $pcx = $cpzj + $bzj * $pcx;
+        var $pcx = $bzj + $cpzj * $pcx;
         $("#pcx").text(Math.round($pcx));
 
-        var $bzj_zfc = addCommas($bzj);
+        var $bzj_zfc = addCommas($cpzj);
         $("#bzj").text($bzj_zfc);
 
-        var $allpay = $bzj + $glf;
+        var $allpay = $cpzj + $glf;
         var $allpay_zfc = addCommas($allpay);
         $("#allpay").text($allpay_zfc);
     }
@@ -127,15 +128,6 @@ $(function() {
                 $(this).addClass("c-xzbz-c-active");
                 $(this).siblings("div").removeClass("c-xzbz-c-active");
             }
-            // $bzj = parseInt($(this).find("strong").text());
-            // $("#bzj_hidden").val($bzj);
-            // var $totalMoney = $cpzj + $bzj;
-            // var $totalMoney_zfc = addCommas($totalMoney);
-            // $("#totalMoney strong").text($totalMoney_zfc);
-            // alert(Math.round(2000 / $("#15money").val()));
-            // $("#bzj15").text(Math.round(2000 / $("#15money").val()));
-            // $("#bzj10").text(Math.round(2000 / $("#10money").val()));
-            // $("#bzj5").text(Math.round(2000 / $("#5money").val()));
             
             checkmoney();
         });
@@ -144,9 +136,6 @@ $(function() {
     $("#tianshu").change(function() {
         $("#glf").text("￥" + parseInt($(this).children('option:selected').val() * $glfeveryday));
         $glf = $(this).children('option:selected').val() * $glfeveryday;
-        // var $allpay = $bzj + $glf;
-        // var $allpay_zfc = addCommas($allpay);
-        // $("#allpay").text($bzj + $glf);
         checkmoney();
     });
 
@@ -193,20 +182,14 @@ $(function() {
         return x1 + (x2 ? x2.replace(/(\d{3})(?=[^$])/g,'$1,') : '');
     }
 
-    function fomatNumber(number) {
-        var result;
-    
-        if (1000 <= parseInt(number) && parseInt(number) < 10000) {
-            result = parseInt(number) / 1000 + "千";
-        } else if (100 <= parseInt(number) && parseInt(number) < 1000) {
-            result = parseInt(number) / 100 + "百";
-        }
-        else if (10000 <= parseInt(number)) {
-    
-            result = parseInt(number) / 10000 + "万";
+    function moneyFormat(money) {
+        var result = "";
+        if (parseInt(money) >= 10000) {
+            result = parseInt(money) / 10000 + "万";
         } else {
-            result = number + "元";
+            result = money;
         }
         return result;
     }
+
 })

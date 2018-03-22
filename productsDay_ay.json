@@ -1,0 +1,53 @@
+{
+    "product": [{
+            "data_borrowmoney": 2000,
+            "moneyMin": 2000,
+            "moneyMax": 200000,
+            "rateOpenLine": 0.4
+        },
+        {
+            "data_borrowmoney": 5000
+        },
+        {
+            "data_borrowmoney": 10000
+        },
+        {
+            "data_borrowmoney": 20000
+        },
+        {
+            "data_borrowmoney": 50000
+        },
+        {
+            "data_borrowmoney": 100000
+        },
+        {
+            "data_borrowmoney": 200000
+        }
+    ],
+    "bzj": [{
+            "data_pzamount": 4000,
+            "moneyTimes": 2,
+            "rateWarn": 0.5
+        },
+        {
+            "data_pzamount": 6000,
+            "moneyTimes": 3,
+            "rateWarn": 0.5
+        },
+        {
+            "data_pzamount": 8000,
+            "moneyTimes":4,
+            "rateWarn": 0.5
+        },
+        {
+            "data_pzamount": 10000,
+            "moneyTimes":5,
+            "rateWarn": 0.5
+        },
+        {
+            "data_pzamount": 12000,
+            "moneyTimes":6,
+            "rateWarn": 0.6
+        }
+    ]
+}
