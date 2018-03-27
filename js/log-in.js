@@ -24,6 +24,9 @@ $(function(){
             }else{
                 $(window).attr('location','index.html');
             }
+        }else{
+            alert("输入有误");
+            $('#Name').focus();
         }
     })
 })
