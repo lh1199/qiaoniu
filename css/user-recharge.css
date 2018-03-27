@@ -1,0 +1,389 @@
+.user{
+    width:100%;
+    height:177px;
+    background:url(../img/user-recharge/user-recharge1.jpg) no-repeat left;
+    background-size:cover;
+}
+
+.user-content{
+    width:1000px;
+    height:177px;
+    margin:0 auto;
+    overflow:hidden;
+}
+
+.user-content1{
+    width:87px;
+    float:left;
+    background:url(../img/user-cash/user2.png) no-repeat center 34px;
+    padding-top:118px;
+    padding-left:52px;
+    padding-right:52px;
+}
+
+.user-content1 p{
+    font-size:14px;
+    line-height:20px;
+    color:white;
+}
+
+.user-content1 span{
+    font-size:12px;
+    line-height:18px;
+    color:#fffc8e;
+}
+
+.user-content2{
+    position:relative;
+    float:left;
+    width:262px;
+    padding-left:52px;
+    border-right:1px solid #ed8a89;
+    height:103px;
+    margin-top:40px;
+}
+
+.user-content2 h4{
+    font-size:14px;
+    font-weight:normal;
+    color:white;
+    line-height:26px;
+}
+
+.user-content2 h5{
+    font-size:12px;
+    font-weight:normal;
+    line-height:24px;
+    color:white;
+    margin-bottom:7px;
+    overflow:hidden;
+}
+
+.user-content2 span{
+    float:left;
+    font-size:12px;
+    line-height:24px;
+    color:white;
+}
+
+.user-content2 ul{
+    display:block;
+    width:174px;
+    height:38px;
+    overflow:hidden;
+}
+
+.user-content2 ul li{
+    float:left;
+    width:25%;
+}
+
+.smrz{
+    position:absolute;
+    bottom:-27px;
+    left:97px;
+}
+
+.progress{
+    float:left;
+    width:102px;
+    height:9px;
+    margin:8px 10px 0 10px;
+    background-color:#e1e1e1;
+    border-radius:4px;
+}
+
+.green{
+    display:block;
+    width:30%;
+    height:9px;
+    border-radius:4px;
+    background-color:#6cbb22;
+}
+
+.progress{
+    width:102px;
+    height:9px;
+}
+
+.user-content3{
+    float:left;
+    width:280px;
+    padding-left:34px;
+    padding-top:42px;
+}
+
+.user-content3 p{
+    font-size:14px;
+    line-height:22px;
+    color:white;
+}
+
+.user-content3 h4{
+    font-size:24px;
+    color:#fefb9c;
+    line-height:38px;
+    margin-bottom:8px;
+}
+
+.user-content3 input{
+    width:91px;
+    height:30px;
+    border:none;
+    border-radius:3px;
+    font-size:14px;
+}
+
+.chongzhi{
+    background-color:#fffc8e;
+    color:#ce2927;
+}
+
+.tixian{
+    background-color:#fff7ec;
+    color:#666666;
+}
+
+.max-box{
+    width:100%;
+    height:790px;
+    padding-top:44px;
+    padding-bottom:45px;
+}
+
+.content{
+    margin:0 auto;
+    width:1000px;
+    height:790px;
+    border:1px solid #e7e7e7;
+    overflow:hidden;
+}
+
+.c-left{
+    width:190px;
+    height:790px;
+    float:left;
+    background-color:#f9f9f9;
+}
+
+.c-left ul{
+    width:100%;
+    height:100%;
+    box-sizing:border-box;
+    border-right:1px solid #e7e7e7;
+}
+
+.c-left ul li{
+    line-height:36px;
+    font-size:14px;
+    color:#666666;
+    margin:2px 0 2px 0;
+    padding-left:60px;
+}
+
+.c-left ul li h4{
+    font-size:15px;
+    margin-top:8px;
+}
+
+.c-left ul li:nth-child(1){
+    background:url(../img/user-cash/user9.png) no-repeat 20px 7px;
+    border-bottom:1px solid #e7e7e7;
+}
+
+.c-left ul li:nth-child(2){
+    background:url(../img/user-cash/user10.png) no-repeat 20px 7px;
+}
+
+.c-left ul li:nth-child(6){
+    background:url(../img/user-cash/user11.png) no-repeat 20px 13px;
+    border-top:1px solid #e7e7e7;
+}
+
+.c-left ul li:nth-child(10){
+    background:url(../img/user-cash/user12.png) no-repeat 20px 17px;
+    border-top:1px solid #e7e7e7;
+}
+
+.c-left ul li:nth-child(13){
+    background:url(../img/user-cash/user13.png) no-repeat 20px 15px;
+    border-top:1px solid #e7e7e7;
+}
+
+.liebiao:hover{
+    cursor:pointer;
+}
+
+.liebiao-active{
+    border-left:2px solid #d73c3a;
+    box-sizing:content-box;
+    background:white;
+    width:127px;
+    border-right:1px solid white;
+}
+
+.liebiao-active p{
+    color:#ce2927;
+}
+
+.c-right{
+    float:left;
+    width:771px;
+    height:761px;
+    padding:14px 22px 15px 17px;
+}
+
+.c-r-header{
+    width:757px;
+    height:44px;
+    padding-left:11px;
+    border-bottom:1px solid #e6e6e6;
+    background-color:#faf9f9;
+    margin-bottom:17px;
+}
+
+.c-r-header li{
+    float:left;
+    width:146px;
+    font-size:16px;
+    color:#333333;
+    line-height:41px;
+    text-align:center;
+    cursor:pointer;
+}
+
+.c-r-h-active{
+    border-top:3px solid #ce2927;
+    border-bottom:1px solid white;
+    background-color:white;
+}
+
+.one{
+    width:751px;
+    height:40px;
+    border:1px dashed #fb8c42;
+    margin-left:12px;
+    background-color:#fff8eb;
+    margin-bottom:16px;
+}
+
+.one p{
+    line-height:40px;
+    font-size:14px;
+    color:#ff6600;
+    background:url(../img/user-cash/user8.png) no-repeat 24px 15px;
+    padding-left:46px;
+}
+
+.c-right h2{
+    line-height:24px;
+    font-size:18px;
+    color:#555555;
+    margin-left:20px;
+    margin-bottom:15px;
+}
+
+.bank{
+    overflow:hidden;
+    margin-bottom:12px;
+    padding-left:20px;
+}
+
+.bank li{
+    float:left;
+    width:187px;
+    height:53px;
+}
+
+.bank li input{
+    float:left;
+    margin-top:14px;
+}
+
+.bank li img{
+    float:left;
+    margin-left:20px;
+}
+
+.biaoti{
+    width:146px;
+    height:49px;
+    text-align:center;
+    font-size:14px;
+    color:#333333;
+}
+
+table{
+    width: 753px;
+    height: 201px;
+    border:solid 1px #e6e6e6;
+    border-width:0px 1px 1px 0px;
+    margin-left:10px;
+}
+
+td{
+    border:solid 1px #e6e6e6;
+    border-width:1px 0px 0px 1px;
+}
+
+.xinxi{
+    height:49px;
+    font-size:14px;
+    color:#666666;
+    padding-left:23px;
+}
+
+.xinxi2 input{
+    width:241px;
+    height:31px;
+    border:1px solid #e1d6c2;
+    background-color:#fffef9;
+    border-radius:3px;
+    margin-right:31px;
+}
+
+.xinxi2 a{
+    color:#366fcd;
+    text-decoration:underline;
+    margin-left:16px;
+}
+
+.xinxi3 input{
+    width:121px;
+    height:31px;
+    border:1px solid #e1d6c2;
+    background-color:#fffef9;
+    border-radius:3px;
+    margin-right:10px;
+}
+
+.xinxi3 a{
+    color:#ff8042;
+    margin-left:30px;
+}
+
+.tijiao{
+    height:49px;
+    padding-left:170px;
+}
+
+.tijiao input{
+    width:182px;
+    height:35px;
+    font-size:14px;
+    color:white;
+    background:#e54e4c;
+    border:none;
+    border-radius:3px;
+}
+
+.last-ul{
+    margin-top:20px;
+    margin-left:20px;
+}
+
+.last-ul li{
+    font-size:14px;
+    color:#888888;
+    line-height:26px;
+}

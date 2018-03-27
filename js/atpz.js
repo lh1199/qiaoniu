@@ -1,6 +1,4 @@
 $(function() {
-    var flag = true;
-    var type = true;
     var $cpzj = 2000;
     var $bzj = 200;
     var $totalMoney = 2200;
@@ -50,6 +48,13 @@ $(function() {
         }
     })
 
+    $(".zcpzj-img").mouseover(function(){
+        $(this).find("img").css("display","block");
+    })
+    $(".zcpzj-img").mouseout(function(){
+        $(this).find("img").css("display","none");
+    })
+
     $(".c-h-1").each(function() {
         $(this).click(function() {
             $(".c-h-1").removeClass("c-h-active");
@@ -58,19 +63,19 @@ $(function() {
     });
 
     $("#sdsr").click(function() {
-        if (flag) {
+        // if (flag) {
             $(this).html("请输入<span>1000</span>的整数倍,最少<span>2000</span>,最多<span>20</span>万");
             $(this).css("color","#888888");
             $(".c-xzcp-content1").css("display", "none");
             $("#sdsr-input").css("display", "block");
             flag = false;
-        } else {
-            $(this).html("手动输入操盘资金&gt;&gt;");
-            $(this).css("color","#366fcd");
-            $(".c-xzcp-content1").css("display", "block");
-            $("#sdsr-input").css("display", "none");
-            flag = true;
-        }
+        // } else {
+        //     $(this).html("手动输入操盘资金&gt;&gt;");
+        //     $(this).css("color","#366fcd");
+        //     $(".c-xzcp-content1").css("display", "block");
+        //     $("#sdsr-input").css("display", "none");
+        //     flag = true;
+        // }
     })
 
     $(".c-xzcp-c").each(function() {

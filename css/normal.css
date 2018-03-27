@@ -22,7 +22,7 @@ a {
     cursor: pointer;
 }
 
-input {
+input,select {
     cursor: pointer;
 }
 

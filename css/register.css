@@ -1,0 +1,176 @@
+.body {
+    background: white;
+    font-family: "Microsoft YaHei", 微软雅黑, "MicrosoftJhengHei", 华文细黑, STHeiti, MingLiu;
+}
+
+@font-face {
+    font-family: arial;
+    src: url('../font/arial.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input {
+    cursor: pointer;
+}
+
+.header{
+    width:100%;
+    height:123px;
+    border-bottom:4px solid #f87f7d;
+}
+
+.h-content{
+    width:960px;
+    height:123px;
+    margin:0 auto;
+    background:url(../img/register/register1.png) no-repeat left center;
+}
+
+.h-content p{
+    float:right;
+    font-size:14px;
+    color:#888888;
+    line-height:123px;
+}
+
+.h-content p span{
+    color:#366fcd;
+    margin-right:10px;
+}
+
+.h-content p a{
+    color:#f75353;
+}
+
+.content{
+    width:1000px;
+    height:570px;
+    margin:0 auto;
+    border-bottom:1px solid #ebebeb;
+}
+
+.alert{
+    width:245px;
+    height:130px;
+    margin:0 auto;
+    background:url(../img/register/register2.png) no-repeat left top;
+    padding-left:55px;
+    margin-top:66px;
+}
+
+.content-b{
+    position:relative;
+    width:976px;
+    height:269px;
+    margin:0 auto;
+    margin-top:66px;
+    border:2px solid #f8eed6;
+    box-sizing:border-box;
+}
+
+.xszx{
+    position:absolute;
+    top:-2px;
+    right:-2px;
+}
+
+.alert h1{
+    font-size:28px;
+    color:#54be57;
+}
+
+.alert p{
+    font-size:14px;
+    color:#666666;
+    line-height:40px;
+}
+
+.alert input{
+    width:173px;
+    height:40px;
+    border:none;
+    border:1px solid #d2d2d2;
+    border-radius:5px;
+    color:#666666;
+    background-color:white;
+    margin-top:10px;
+}
+
+.content-b-c{
+    float:left;
+    width:243px;
+    height:225px;
+    background-color:#fffbeb;
+    padding-top:40px;
+}
+
+.c2{
+    background-color:#f8eed6;
+}
+
+.content-b-c-n{
+    height:90px;
+    padding-top:100px;
+    border-right:1px solid #f8eed6;
+    padding-left:32px;
+    padding-right:32px;
+    padding-top:100px;
+}
+
+.content-b-c-n h2{
+    font-size:22px;
+    font-weight:normal;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.content-b-c-n p{
+    font-size:15px;
+    color:#777777;
+    text-align:center;
+    line-height:22px;
+}
+
+.n1{
+    background:url(../img/register/register3.png) no-repeat center top;
+}
+
+.n2{
+    background:url(../img/register/register4.png) no-repeat center top;
+    padding-top:150px;
+}
+
+.n3{
+    background:url(../img/register/register5.png) no-repeat center top;
+}
+
+.n4{
+    background:url(../img/register/register6.png) no-repeat center top;
+}
+
+.footer{
+    width:1000px;
+    margin:0 auto;
+    height:154px;
+    padding-top:50px;
+}
+
+.footer p{
+    font-size:12px;
+    color:#999999;
+    text-align:center;
+    margin-bottom:10px;
+}

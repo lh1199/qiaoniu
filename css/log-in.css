@@ -1,0 +1,158 @@
+.body {
+    background: white;
+    font-family: "Microsoft YaHei", 微软雅黑, "MicrosoftJhengHei", 华文细黑, STHeiti, MingLiu;
+}
+
+@font-face {
+    font-family: arial;
+    src: url('../font/arial.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input {
+    cursor: pointer;
+}
+
+.header{
+    width:100%;
+    height:123px;
+    border-bottom:4px solid #f87f7d;
+}
+
+.header-content{
+    width:950px;
+    margin:0 auto;
+    overflow:hidden;
+}
+
+.h-left{
+    width:304px;
+    height:78px;
+    float:left;
+    background:url(../img/logo.jpg) no-repeat left top;
+    padding-left:191px;
+    margin-top:10px;
+}
+
+.h-left h4{
+    font-size:22px;
+    color:#888888;
+    height:58px;
+    line-height:58px;
+    border-left:1px solid #888888;
+    padding-left:24px;
+    margin-top:20px;
+}
+
+.header-content p{
+    float:right;
+    font-size:14px;
+    color:#888888;
+    line-height:123px;
+}
+
+.header-content p a{
+    color:#f75353;
+}
+
+.content{
+    width:1000px;
+    height:570px;
+    margin:0 auto;
+    overflow:hidden;
+    border-bottom:1px solid #ebebeb;
+}
+
+.c-l{
+    float:left;
+    width:375px;
+    height:337px;
+    margin-top:76px;
+    margin-left:30px;
+}
+
+.c-r{
+    float:right;
+    margin-top:75px;
+    margin-right:40px;
+    width:390px;
+    height:380px;
+    border:1px solid #ebebeb;
+    border-radius:5px;
+}
+
+.c-r-b{
+    width:283px;
+    margin:0 auto;
+}
+
+.c-r h3{
+    height:55px;
+    border-bottom:1px solid #ebebeb;
+    line-height:55px;
+    padding-left:55px;
+    font-size:20px;
+    color:#888888;
+}
+
+.mm{
+    font-size:14px;
+    color:#999999;
+    line-height:26px;
+    margin-top:18px;
+}
+
+.nn{
+    width:283px;
+    height:32px;
+    border:1px solid #999999;
+    background:url(../img/login1.jpg) no-repeat 260px center;
+}
+
+.nn1{
+    background:url(../img/login2.jpg) no-repeat 260px center;
+}
+
+.denglu{
+    width:277px;
+    height:45px;
+    border:none;
+    border-radius:5px;
+    background-color:#d84141;
+    color:white;
+    margin:35px 0 20px 4px;
+}
+
+.bb{
+    font-size:12px;
+    color:#555555;
+    text-align:right;
+}
+
+.footer{
+    width:1000px;
+    margin:0 auto;
+    height:154px;
+    padding-top:50px;
+}
+
+.footer p{
+    font-size:12px;
+    color:#999999;
+    text-align:center;
+    margin-bottom:10px;
+}
+
